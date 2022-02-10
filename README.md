@@ -1,6 +1,6 @@
 # Basic Arch Linux Docker images ![build](https://github.com/lopsided98/archlinux-docker/workflows/build/badge.svg)
 
-Docker images for Arch Linux on x86_64, AArch32 (ARMv5TE, ARMv6, ARMv7-A) and AArch64 (ARMv8-A). Built using native pacman and Docker multi-stage builds. Built daily by GitHub Actions on publicly visible infrastructure using QEMU emulation to support ARM.
+Docker images for Arch Linux on x86_64, AArch32 (ARMv7-A) and AArch64 (ARMv8-A). Built using native pacman and Docker multi-stage builds. Built daily by GitHub Actions on publicly visible infrastructure using QEMU emulation to support ARM.
 
 ## Running the images
 
@@ -51,8 +51,6 @@ docker run -e TZ=America/New_York lopsided/archlinux
 - Prepare binfmt use with Qemu user mode using `sudo ./prepare-qemu`
 - Run `BUILD_ARCH=<arch> ./build` to build
   - Use `BUILD_ARCH=amd64` for x86_64
-  - Use `BUILD_ARCH=arm32v5` for ARMv5 Aarch32
-  - Use `BUILD_ARCH=arm32v6` for ARMv6 Aarch32
   - Use `BUILD_ARCH=arm32v7` for ARMv7 Aarch32
   - Use `BUILD_ARCH=arm64v8` for ARMv8 Aarch64
 
