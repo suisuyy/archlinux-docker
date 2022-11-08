@@ -9,3 +9,6 @@ Description = Cleaning up package cache...
 Depends = coreutils
 When = PostTransaction
 Exec = /usr/bin/rm -rf /var/cache/pacman/pkg
+
+
+
