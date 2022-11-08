@@ -29,3 +29,5 @@ RUN locale-gen && \
     (pacman-key --populate archlinuxarm || true)
 
 CMD ["/usr/bin/bash"]
+
+
